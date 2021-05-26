@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-  
+
     <ion-title>Entrar / Login</ion-title>
     <ion-img src="assets/em01.jpg" slot="end" class="logo-geral"></ion-img>
   </ion-toolbar>
@@ -12,9 +12,11 @@
   <ion-img src="assets/em01.jpg" class="logo-login"></ion-img>
   </div>
   <p class="ion-text-center"><small>Você precisa ter uma conta do Google (Gmail).</small></p>
-  <ion-button expand="block" (click)="login()">
-    <ion-icon name="logo-google" slot="start"></ion-icon>
-    Entrar com o Google
+  
+  <ion-button (click)="login()" color="secondary" expand="block">
+  
+    <ion-icon name="person-circle-outline"></ion-icon>
+    Fazer Login
   </ion-button>
 
 </ion-content>

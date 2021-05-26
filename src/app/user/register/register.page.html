@@ -30,7 +30,7 @@
             <!-- Campo nome (name) -->
             <ion-item>
                 <ion-label for="name" position="floating" color="primary">
-                    Nome:
+                    <ion-icon name="person-circle-outline"></ion-icon>  Nome:
                     <ion-text color="danger" *ngIf="registerForm.controls.name.errors">
                         <small *ngIf="registerForm.controls.name.errors.required">* Obrigatório</small>
                         <small *ngIf="registerForm.controls.name.errors.minlength">* Inválido</small>
@@ -42,7 +42,7 @@
             <!-- Campo e-mail (email) -->
             <ion-item>
                 <ion-label for="email" position="floating" color="primary">
-                    E-mail:
+                    <ion-icon name="mail-outline"></ion-icon>  E-mail:
                     <ion-text color="danger" *ngIf="registerForm.controls.email.errors">
                         <small *ngIf="registerForm.controls.email.errors.required">* Obrigatório</small>
                         <small *ngIf="registerForm.controls.email.errors.email">* Inválido</small>
@@ -56,7 +56,7 @@
             <!-- Campo 'Whatsapp' (whatsapp) -->
             <ion-item>
                 <ion-label for="whatsapp" position="floating" color="primary">
-                    Whatsapp:
+                    <ion-icon name="logo-whatsapp"></ion-icon>  Whatsapp:
                     <ion-text color="danger" *ngIf="registerForm.controls.whatsapp.errors">
                         <small *ngIf="registerForm.controls.whatsapp.errors.required">* Obrigatório</small>
                         <small *ngIf="registerForm.controls.whatsapp.errors.pattern">* Inválido</small>
@@ -69,7 +69,7 @@
             <!-- Campo CPF (cpf) -->
             <ion-item>
                 <ion-label for="cpf" position="floating" color="primary">
-                    CPF:
+                    <ion-icon name="id-card-outline"></ion-icon>  CPF:
                     <ion-text color="danger" *ngIf="registerForm.controls.cpf.errors">
                         <small *ngIf="registerForm.controls.cpf.errors.required">* Obrigatório</small>
                         <small *ngIf="registerForm.controls.cpf.errors.pattern">* Inválido</small>

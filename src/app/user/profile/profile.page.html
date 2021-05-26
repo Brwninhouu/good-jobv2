@@ -29,10 +29,10 @@
         <ion-card-content>
 
             <ion-list>
-                <ion-item class="ion-no-padding"><strong>Nome:&nbsp;</strong>{{ (item | async)?.name }}</ion-item>
-                <ion-item class="ion-no-padding"><strong>E-mail:&nbsp;</strong>{{ (item | async)?.email }}</ion-item>
-                <ion-item class="ion-no-padding"><strong>Whatsapp:&nbsp;</strong>{{ (item | async)?.whatsapp }}</ion-item>
-                <ion-item class="ion-no-padding"><strong>CPF:&nbsp;</strong>{{ (item | async)?.cpf }}</ion-item>
+                <ion-item class="ion-no-padding"><strong><ion-icon name="person-circle-outline"></ion-icon>  Nome:&nbsp;</strong>{{ (item | async)?.name }}</ion-item>
+                <ion-item class="ion-no-padding"><strong><ion-icon name="mail-outline"></ion-icon>  E-mail:&nbsp;</strong>{{ (item | async)?.email }}</ion-item>
+                <ion-item class="ion-no-padding"><strong><ion-icon name="logo-whatsapp"></ion-icon>  Whatsapp:&nbsp;</strong>{{ (item | async)?.whatsapp }}</ion-item>
+                <ion-item class="ion-no-padding"><strong><ion-icon name="id-card-outline"></ion-icon>  CPF:&nbsp;</strong>{{ (item | async)?.cpf }}</ion-item>
             </ion-list>
 
            <!-- <ion-button expand="block" !routerLink="/register/{{ (item | async)?.uid }}">Editar</ion-button>-->

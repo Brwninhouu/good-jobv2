@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import firebase from 'firebase/app';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -20,10 +20,13 @@ export class LoginPage implements OnInit {
     // 2) Injeta dependências
     public auth: AngularFireAuth,
     private router: Router,
-    public alert: AlertController
-  ) { }
+    public alert: AlertController,
+    public menuCtrl: MenuController
+  ) { 
+    this.menuCtrl.enable(false);
+   }
 
-  ngOnInit() { }
+  ngOnInit()  {}
 
   // 4) Método de login
   login() {

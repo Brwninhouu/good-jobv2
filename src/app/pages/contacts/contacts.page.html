@@ -22,7 +22,7 @@
 
             <ion-item>
                 <ion-label for="name" position="floating" color="primary">
-                    Nome:
+                    <ion-icon name="person-circle-outline"></ion-icon>  Nome:
                     <ion-text color="danger" *ngIf="contactForm.controls.name.errors">
                         <small *ngIf="contactForm.controls.name.errors.required">* Obrigatório</small>
                         <small *ngIf="contactForm.controls.name.errors.minlength">* Inválido</small>
@@ -33,7 +33,7 @@
 
             <ion-item>
                 <ion-label for="email" position="floating" color="primary">
-                    E-mail:
+                    <ion-icon name="mail-outline"></ion-icon>  E-mail:
                     <ion-text color="danger" *ngIf="contactForm.controls.email.errors">
                         <small *ngIf="contactForm.controls.email.errors.required">* Obrigatório</small>
                         <small *ngIf="contactForm.controls.email.errors.email">* Inválido</small>
@@ -44,7 +44,7 @@
 
             <ion-item>
                 <ion-label for="subject" position="floating" color="primary">
-                    Assunto:
+                    <ion-icon name="document-text-outline"></ion-icon>  Assunto:
                     <ion-text color="danger" *ngIf="contactForm.controls.subject.errors">
                         <small *ngIf="contactForm.controls.subject.errors.required">* Obrigatório</small>
                         <small *ngIf="contactForm.controls.subject.errors.minlength">* Inválido</small>
@@ -55,7 +55,7 @@
 
             <ion-item>
                 <ion-label for="message" position="floating" color="primary">
-                    Mensagem:
+                    <ion-icon name="chatbubbles-outline"></ion-icon>  Mensagem:
                     <ion-text color="danger" *ngIf="contactForm.controls.message.errors">
                         <small *ngIf="contactForm.controls.message.errors.required">* Obrigatório</small>
                         <small *ngIf="contactForm.controls.message.errors.minlength">* Inválido</small>
