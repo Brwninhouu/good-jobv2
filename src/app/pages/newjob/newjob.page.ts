@@ -106,6 +106,28 @@ export class NewjobPage implements OnInit {
         ]),
       ],
 
+        // Campo 'bairro' ()
+        maps: [
+          '',
+          Validators.compose([
+            Validators.required,
+            Validators.minLength(3),
+            removeSpaces
+          ]),
+        ],
+
+         // Campo 'imagem' ()
+         photo: [
+          '',
+          Validators.compose([
+            Validators.required,
+            Validators.minLength(3),
+            removeSpaces
+          ]),
+        ],
+
+      
+
       // Id do usuário logado (uid)
       uid: ['']
 

@@ -36,7 +36,7 @@
             </ion-list>
 
            <!-- <ion-button expand="block" !routerLink="/register/{{ (item | async)?.uid }}">Editar</ion-button>-->
-           <ion-button expand="block" routerLink="/register">Editar</ion-button>
+           <ion-button expand="block" routerLink="/register" color="dark">Editar</ion-button>
         </ion-card-content>
     </ion-card>
 
@@ -44,14 +44,14 @@
     <p class="ion-padding-top">
         Você fez login usando uma conta do Google. Para editar seu perfil e/ou trocar a senha, clique no botão abaixo:
     </p>
-    <ion-button expand="block" (click)="profile()" class="ion-margin-bottom">
+    <ion-button expand="block" (click)="profile()" class="ion-margin-bottom" color="dark">
         <ion-icon name="person" slot="start"></ion-icon>
         Ver / Editar perfil
     </ion-button>
 
     <!-- Logout -->
     <p class="ion-padding-top">Para sair do aplicativo, clique no botão abaixo:</p>
-    <ion-button expand="block" color="danger" routerLink="/user/logout">
+    <ion-button expand="block" routerLink="/user/logout" color="danger">
         <ion-icon name="log-out" slot="start"></ion-icon>
         Sair do Aplicativo
     </ion-button>
