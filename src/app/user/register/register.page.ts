@@ -10,11 +10,13 @@ import {
 import { AngularFirestore } from '@angular/fire/firestore';
 import { DatePipe } from '@angular/common';
 
+
 // Alert Controller
 import { AlertController } from '@ionic/angular';
 
 // Usuário autenticado
 import { AngularFireAuth } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 
 // 6) Não permite somente espaços nos campos
 export function removeSpaces(control: AbstractControl) {
@@ -44,7 +46,8 @@ export class RegisterPage implements OnInit {
     public alert: AlertController,
 
     // Usuário autenticado
-    public auth: AngularFireAuth
+    public auth: AngularFireAuth,
+    public router: Router
   ) { }
 
   ngOnInit() {
@@ -157,11 +160,11 @@ export class RegisterPage implements OnInit {
       message: 'Cadastro realizado com sucesso!',
       buttons: [{
         text: 'Ok',
-        handler: () => {
 
-          // Reset do formulário
-          this.registerForm.reset();
+        handler: () => {
+          this.router.navigate(['/user/profile']);
         }
+
       }]
     });
 

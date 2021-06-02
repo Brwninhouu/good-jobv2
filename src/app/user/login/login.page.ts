@@ -54,9 +54,15 @@ export class LoginPage implements OnInit {
       message: 'Login efetuado com sucesso!',
       buttons: [{
         text: 'Beleza',
+
+
+        
         handler: () => {
           this.router.navigate(['/user/profile']);
         }
+
+
+
       }]
     });
 

@@ -28,11 +28,18 @@ const routes: Routes = [
 
   {
     path: 'contacts',
-    loadChildren: () => import('./pages/contacts/contacts.module').then(m => m.ContactsPageModule)
+    loadChildren: () => import('./pages/contacts/contacts.module').then(m => m.ContactsPageModule),
+
+    // Só pode ser vista se logado
+    canActivate: [AngularFireAuthGuard], data: { authGuardPipe: toLogin }
   },
+
   {
     path: 'about',
-    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutPageModule)
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutPageModule),
+
+    // Só pode ser vista se logado
+    canActivate: [AngularFireAuthGuard], data: { authGuardPipe: toLogin }
   },
   {
     path: 'user/login',
@@ -65,15 +72,24 @@ const routes: Routes = [
   },
   {
     path: 'edit/:id',
-    loadChildren: () => import('./user/edit/edit.module').then( m => m.EditPageModule)
+    loadChildren: () => import('./user/edit/edit.module').then( m => m.EditPageModule),
+
+    // Só pode ser vista se logado
+    canActivate: [AngularFireAuthGuard], data: { authGuardPipe: toLogin }
   },
   {
     path: 'newjob',
-    loadChildren: () => import('./pages/newjob/newjob.module').then( m => m.NewjobPageModule)
+    loadChildren: () => import('./pages/newjob/newjob.module').then( m => m.NewjobPageModule),
+
+    // Só pode ser vista se logado
+    canActivate: [AngularFireAuthGuard], data: { authGuardPipe: toLogin }
   },
   {
     path: 'job',
-    loadChildren: () => import('./pages/job/job.module').then( m => m.JobPageModule)
+    loadChildren: () => import('./pages/job/job.module').then( m => m.JobPageModule),
+
+    // Só pode ser vista se logado
+    canActivate: [AngularFireAuthGuard], data: { authGuardPipe: toLogin }
   },
   // Página de erro 404
   // '**' TEM QUE SER SEMPRE A ÚLTIMA ROTA
