@@ -14,14 +14,14 @@ import {
 const toLogin = () => redirectUnauthorizedTo(['/user/login']);
 
 // Usuário está logado? Vai para a página inicial.
-const isLogged = () => redirectLoggedInTo(['/register']);
+const isLogged = () => redirectLoggedInTo(['job']);
 
 const routes: Routes = [
 
   // Rota para a página inicial
   {
     path: '',
-    redirectTo: 'user/profile',
+    redirectTo: 'job',
     pathMatch: 'full'
   },
 

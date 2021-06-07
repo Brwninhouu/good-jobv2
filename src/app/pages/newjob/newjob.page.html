@@ -39,6 +39,17 @@
                 <ion-input type="text" id="service" name="service" formControlName="service"></ion-input>
             </ion-item>
 
+            <ion-item>
+                <ion-label for="name" position="floating" color="willian">
+                    <ion-icon name="person"></ion-icon> Nome:
+                    <ion-text color="danger" *ngIf="registerForm.controls.name.errors">
+                        <small *ngIf="registerForm.controls.name.errors.required">* Obrigatório</small>
+                        <small *ngIf="registerForm.controls.name.errors.email">* Inválido</small>
+                    </ion-text>
+                </ion-label>
+                <ion-input type="text" id="name" name="name" formControlName="name"></ion-input>
+            </ion-item>
+
             <!-- Campo e-mail (email) -->
             <ion-item>
                 <ion-label for="value" position="floating" color="willian">

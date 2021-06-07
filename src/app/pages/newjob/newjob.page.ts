@@ -86,6 +86,16 @@ export class NewjobPage implements OnInit {
         ]),
       ],
 
+          // Campo 'Nome' 
+          name: [
+            '',
+            Validators.compose([
+              Validators.required,
+              Validators.minLength(3),
+              removeSpaces
+            ]),
+          ],
+
       // Campo 'E-mail' (email)
       value: [
         '',
